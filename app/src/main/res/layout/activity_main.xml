@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/fab_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/valAnime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valAnime2"
+            android:onClick="valueanimation_border"
+            android:text="Animator Set - Border" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginEnd="65dp"
+            android:text="Hello World!" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="TextViewsdfghjkl;lkjgfdssdfgjkl;lkjhgfdsdfghjkl;lkj n above example, I’m updating the width of a view from 10 to 100. In onAnimationUpdate() method the animated value is used to update the width of that view. On calling requestLayout() the framework will redraw the view according to updated width value (this method is needed to be called on every change of value otherwise the view will not be redrawn according to updated value and effect would not be seen).
+
+Besides this simple example, let’s have a look at a little complex one. In this example, I’m going to change x and y coordinates and size of the button on click of a floating action button. And result is shown below —
+
+" />
+
+        <TextView
+            android:id="@+id/textV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="using hardcoding" />
+
+        <TextView
+            android:id="@+id/textV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="using XML file" />
+
+        <Button
+            android:id="@+id/valAnime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textV1"
+            android:onClick="valueanimation"
+            android:text="Value Animator" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textV2"
+            android:onClick="val_anime"
+            android:text="Using Resource file" />
+
+        <Button
+            android:id="@+id/obj_anime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valAnime1"
+            android:onClick="obj_anime"
+            android:text="Using Object Animator"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/obj_anime_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/valAnime1"
+            android:onClick="obj_anime_xml"
+            android:text="Using Resource File"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/valAnime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/obj_anime"
+            android:onClick="valueanimation_fab"
+            android:text="Value Animator - FAB" />
+
+        <Button
+            android:id="@+id/anime_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valAnime"
+            android:onClick="anime_set"
+            android:text="Animator Set - Search" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anime_set"
+            android:onClick="multianime_on_one_view"
+            android:text="View Property Animator(For multiple anime's on single view"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+
+</ScrollView>
